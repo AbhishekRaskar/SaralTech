@@ -4,9 +4,8 @@ body {
     background-image: url('https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     color: white;
-    margin: 0;
-    padding: 0;
 }
 
 /* Header */
@@ -35,6 +34,8 @@ nav ul {
 
 nav ul li a {
     color: crimson;
+    font-size: 18px;
+    font-weight: bold;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -57,17 +58,108 @@ section {
 
 h2 {
     text-align: center;
-    color: #dc143c;
+    color: crimson;
 }
 
 p {
     color: white;
 }
 
+.service-list {
+    list-style-type: none;
+    padding: 5;
+}
+
+.service-list li {
+    margin-bottom: 10px;
+}
+
+.badge {
+    background-color: crimson;
+    text-align: center;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: crimson;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: black;
+}
 
 .burger-icon {
     display: none;
     cursor: pointer;
+}
+
+
+/* Portfolio */
+
+.project {
+    margin-bottom: 20px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: auto; 
+    cursor: pointer;
+    border: none; 
+}
+
+
+
+.project img {
+    width: 50%;
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.project p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* Media query for portfolio */
+@media screen and (max-width: 768px) {
+    .project img {
+        width: 100%;
+    }
 }
 
 /* Media query*/
