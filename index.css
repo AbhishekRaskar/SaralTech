@@ -11,9 +11,9 @@ body {
 /* Header */
 header {
     /* background-color: white; */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: crimson;
-    padding: 5px;
+    /* padding: 5px; */
     text-align: center;
     margin-bottom: 20px;
     position: relative;
@@ -22,7 +22,8 @@ header {
 /* Nav */
 nav {
     padding: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    /* border-radius: 8px; */
 }
 
 nav ul {
@@ -43,6 +44,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffd700;
 }
+
 
 /* Main */
 main {
@@ -130,9 +132,9 @@ button {
     font-size: medium;
     border-radius: 10px;
     padding: 10px 20px;
-    margin: auto; 
+    margin: auto;
     cursor: pointer;
-    border: none; 
+    border: none;
 }
 
 
@@ -164,12 +166,21 @@ button {
 
 /* Media query*/
 @media screen and (max-width: 768px) {
+    nav {
+        padding: 5px;
+        box-shadow: none;
+        border-radius: 0;
+        /* background-color: rgba(0, 0, 0, 0.5); */
+    }
+
     nav ul {
         display: none;
         position: absolute;
         top: 60px;
         left: 0;
+        padding: 5px;
         width: 100%;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
         /* background-color: white; */
         z-index: 10;
     }
@@ -186,7 +197,7 @@ button {
     .burger-icon {
         display: block;
         position: absolute;
-        top: 30px;
+        top: 10px;
         right: 15px;
         color: crimson;
     }
@@ -199,5 +210,6 @@ button {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+        margin-top: 20px;
     }
 }
